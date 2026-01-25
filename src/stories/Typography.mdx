@@ -1,0 +1,121 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Overview/Typography" />
+
+# Typography
+
+Our typography system is designed for clarity and readability.
+
+## Font Families
+
+### Sans-Serif (Inter)
+
+The primary font family used for all UI text.
+
+<div style={{ fontFamily: 'Inter, system-ui, sans-serif', marginTop: '16px' }}>
+  <p style={{ fontSize: '24px', marginBottom: '8px' }}>The quick brown fox jumps over the lazy dog.</p>
+  <p style={{ fontSize: '16px', color: '#737373' }}>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  <p style={{ fontSize: '16px', color: '#737373' }}>abcdefghijklmnopqrstuvwxyz</p>
+  <p style={{ fontSize: '16px', color: '#737373' }}>0123456789</p>
+</div>
+
+### Monospace (JetBrains Mono)
+
+Used for code snippets and technical content.
+
+<div style={{ fontFamily: 'JetBrains Mono, monospace', marginTop: '16px', background: '#f5f5f5', padding: '16px', borderRadius: '8px' }}>
+  <code style={{ fontSize: '14px' }}>const greeting = "Hello, World!";</code>
+</div>
+
+## Type Scale
+
+<table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '16px' }}>
+  <thead>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <th style={{ textAlign: 'left', padding: '12px 0' }}>Name</th>
+      <th style={{ textAlign: 'left', padding: '12px 0' }}>Size</th>
+      <th style={{ textAlign: 'left', padding: '12px 0' }}>Line Height</th>
+      <th style={{ textAlign: 'left', padding: '12px 0' }}>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-xs</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>12px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>16px</td>
+      <td style={{ padding: '12px 0', fontSize: '12px' }}>Extra small text</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-sm</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>14px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>20px</td>
+      <td style={{ padding: '12px 0', fontSize: '14px' }}>Small text</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-base</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>16px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>24px</td>
+      <td style={{ padding: '12px 0', fontSize: '16px' }}>Base text</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-lg</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>18px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>28px</td>
+      <td style={{ padding: '12px 0', fontSize: '18px' }}>Large text</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-xl</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>20px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>28px</td>
+      <td style={{ padding: '12px 0', fontSize: '20px' }}>Extra large text</td>
+    </tr>
+    <tr style={{ borderBottom: '1px solid #e5e5e5' }}>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-2xl</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>24px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>32px</td>
+      <td style={{ padding: '12px 0', fontSize: '24px' }}>2XL heading</td>
+    </tr>
+    <tr>
+      <td style={{ padding: '12px 0', fontWeight: '500' }}>text-3xl</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>30px</td>
+      <td style={{ padding: '12px 0', color: '#737373' }}>36px</td>
+      <td style={{ padding: '12px 0', fontSize: '30px' }}>3XL heading</td>
+    </tr>
+  </tbody>
+</table>
+
+## Font Weights
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '16px' }}>
+  <div style={{ padding: '16px', border: '1px solid #e5e5e5', borderRadius: '8px' }}>
+    <p style={{ fontWeight: '400', fontSize: '18px', marginBottom: '4px' }}>Regular</p>
+    <p style={{ fontSize: '12px', color: '#737373' }}>font-weight: 400</p>
+  </div>
+  <div style={{ padding: '16px', border: '1px solid #e5e5e5', borderRadius: '8px' }}>
+    <p style={{ fontWeight: '500', fontSize: '18px', marginBottom: '4px' }}>Medium</p>
+    <p style={{ fontSize: '12px', color: '#737373' }}>font-weight: 500</p>
+  </div>
+  <div style={{ padding: '16px', border: '1px solid #e5e5e5', borderRadius: '8px' }}>
+    <p style={{ fontWeight: '600', fontSize: '18px', marginBottom: '4px' }}>Semibold</p>
+    <p style={{ fontSize: '12px', color: '#737373' }}>font-weight: 600</p>
+  </div>
+  <div style={{ padding: '16px', border: '1px solid #e5e5e5', borderRadius: '8px' }}>
+    <p style={{ fontWeight: '700', fontSize: '18px', marginBottom: '4px' }}>Bold</p>
+    <p style={{ fontSize: '12px', color: '#737373' }}>font-weight: 700</p>
+  </div>
+</div>
+
+## Usage Guidelines
+
+### Headings
+- Use **semibold (600)** for page titles and section headers
+- Use **medium (500)** for card titles and sub-headings
+
+### Body Text
+- Use **regular (400)** for body text and descriptions
+- Use **text-sm (14px)** for most UI text
+- Use **text-base (16px)** for longer form content
+
+### Labels & Captions
+- Use **medium (500)** for form labels
+- Use **text-xs (12px)** for captions and helper text

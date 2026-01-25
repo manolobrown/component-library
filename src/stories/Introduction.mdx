@@ -1,0 +1,66 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Overview/Introduction" />
+
+# Component Library
+
+A modern Vue 3 component library built with TypeScript and TailwindCSS v4.
+
+## Features
+
+- **Vue 3 + TypeScript** - Full TypeScript support with proper type definitions
+- **TailwindCSS v4** - Modern styling with custom design tokens
+- **Accessible** - All components follow WAI-ARIA guidelines
+- **Storybook** - Interactive documentation with examples
+
+## Installation
+
+```bash
+pnpm add component-library
+```
+
+## Quick Start
+
+```vue
+<script setup lang="ts">
+import { Button, Input, Modal } from 'component-library'
+import 'component-library/styles'
+</script>
+
+<template>
+  <Button variant="primary">Click me</Button>
+</template>
+```
+
+## Components
+
+### Core Components
+
+- **Button** - Primary action element with multiple variants and sizes
+- **Input** - Text input field with validation states
+- **Textarea** - Multi-line text input with character count
+- **Checkbox** - Binary selection with indeterminate state
+- **Radio** - Single selection from a group of options
+- **Select** - Dropdown selection with search capability
+
+### Layout Components
+
+- **Card** - Container for grouping related content
+- **Accordion** - Collapsible content sections
+- **Tabs** - Tabbed navigation between content panels
+- **Modal** - Dialog overlay for focused interactions
+- **Drawer** - Slide-in panel for secondary content
+
+## Design Principles
+
+1. **Minimal & Clean** - Focus on content, not decoration
+2. **Consistent** - Unified design language across all components
+3. **Accessible** - Keyboard navigation and screen reader support
+4. **Customizable** - Easy to theme with TailwindCSS utilities
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
