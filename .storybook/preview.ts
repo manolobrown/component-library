@@ -1,4 +1,4 @@
-import type { Preview } from '@storybook/vue3'
+import type { Preview } from '@storybook/vue3-vite'
 import '../src/styles/main.css'
 
 const preview: Preview = {
@@ -10,13 +10,18 @@ const preview: Preview = {
       },
     },
     backgrounds: {
-      default: 'light',
-      values: [
-        { name: 'light', value: '#fafafa' },
-        { name: 'dark', value: '#171717' },
-      ],
+      options: {
+        light: { name: 'light', value: '#fafafa' },
+        dark: { name: 'dark', value: '#171717' }
+      }
     },
   },
+
+  initialGlobals: {
+    backgrounds: {
+      value: 'light'
+    }
+  }
 }
 
 export default preview
