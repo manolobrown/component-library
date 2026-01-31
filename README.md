@@ -7,7 +7,7 @@ A modern, accessible component library built with Vue 3, TypeScript, and Tailwin
 - **Vue 3 + TypeScript** - Full type safety with exported type definitions
 - **TailwindCSS v4** - Modern styling with custom design tokens
 - **Accessible** - WAI-ARIA compliant with keyboard navigation
-- **Storybook 8** - Interactive documentation with live examples
+- **Storybook 10** - Interactive documentation with live examples
 - **11 Components** - Core form elements and layout components
 
 ## Requirements
@@ -58,24 +58,24 @@ pnpm build-storybook
 
 ### Core Components
 
-| Component | Description |
-|-----------|-------------|
-| **Button** | Primary action element with 5 variants (primary, secondary, outline, ghost, destructive) and 3 sizes |
-| **Input** | Text input with label, placeholder, error states, and size options |
-| **Textarea** | Multi-line input with resize control and character count |
-| **Checkbox** | Binary selection with indeterminate state and description support |
-| **Radio** | Single selection from options with horizontal/vertical layouts |
-| **Select** | Dropdown selection with optional search functionality |
+| Component    | Description                                                                                          |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
+| **Button**   | Primary action element with 5 variants (primary, secondary, outline, ghost, destructive) and 3 sizes |
+| **Input**    | Text input with label, placeholder, error states, and size options                                   |
+| **Textarea** | Multi-line input with resize control and character count                                             |
+| **Checkbox** | Binary selection with indeterminate state and description support                                    |
+| **Radio**    | Single selection from options with horizontal/vertical layouts                                       |
+| **Select**   | Dropdown selection with optional search functionality                                                |
 
 ### Layout Components
 
-| Component | Description |
-|-----------|-------------|
-| **Card** | Container with configurable padding, shadow, and border radius |
-| **Accordion** | Collapsible sections with single or multiple open items |
-| **Tabs** | Tabbed navigation with 3 variants (default, pills, underline) |
-| **Modal** | Dialog overlay with focus trap and scroll lock |
-| **Drawer** | Slide-in panel from any edge (left, right, top, bottom) |
+| Component     | Description                                                    |
+| ------------- | -------------------------------------------------------------- |
+| **Card**      | Container with configurable padding, shadow, and border radius |
+| **Accordion** | Collapsible sections with single or multiple open items        |
+| **Tabs**      | Tabbed navigation with 3 variants (default, pills, underline)  |
+| **Modal**     | Dialog overlay with focus trap and scroll lock                 |
+| **Drawer**    | Slide-in panel from any edge (left, right, top, bottom)        |
 
 ## Usage
 
@@ -91,17 +91,14 @@ import { Button, Input, Modal } from '@/components'
 
 ```vue
 <template>
-  <Button variant="primary" size="md" @click="handleClick">
-    Click me
-  </Button>
+  <Button variant="primary" size="md" @click="handleClick"> Click me </Button>
 
-  <Button variant="destructive" :loading="isLoading">
-    Delete
-  </Button>
+  <Button variant="destructive" :loading="isLoading"> Delete </Button>
 </template>
 ```
 
 **Props:**
+
 - `variant`: `'primary' | 'secondary' | 'outline' | 'ghost' | 'destructive'`
 - `size`: `'sm' | 'md' | 'lg'`
 - `disabled`: `boolean`
@@ -124,6 +121,7 @@ import { Button, Input, Modal } from '@/components'
 ```
 
 **Props:**
+
 - `modelValue`: `string`
 - `type`: `'text' | 'email' | 'password' | 'number' | 'tel' | 'url' | 'search'`
 - `label`: `string`
@@ -138,14 +136,7 @@ import { Button, Input, Modal } from '@/components'
 
 ```vue
 <template>
-  <Textarea
-    v-model="bio"
-    label="Bio"
-    :rows="4"
-    :max-length="500"
-    show-count
-    resize="vertical"
-  />
+  <Textarea v-model="bio" label="Bio" :rows="4" :max-length="500" show-count resize="vertical" />
 </template>
 ```
 
@@ -221,12 +212,8 @@ const openItem = ref('')
 
 <template>
   <Accordion v-model="openItem" type="single">
-    <AccordionItem value="item1" title="Section 1">
-      Content for section 1
-    </AccordionItem>
-    <AccordionItem value="item2" title="Section 2">
-      Content for section 2
-    </AccordionItem>
+    <AccordionItem value="item1" title="Section 1"> Content for section 1 </AccordionItem>
+    <AccordionItem value="item2" title="Section 2"> Content for section 2 </AccordionItem>
   </Accordion>
 </template>
 ```
@@ -301,13 +288,13 @@ The library uses TailwindCSS v4 with custom design tokens defined in `src/styles
 
 ### Colors
 
-| Token | Usage |
-|-------|-------|
+| Token                         | Usage                      |
+| ----------------------------- | -------------------------- |
 | `neutral-50` to `neutral-950` | Backgrounds, text, borders |
 | `primary-500` / `primary-600` | Accent color (blue-indigo) |
-| `success-500` | Success states |
-| `warning-500` | Warning states |
-| `error-500` | Error states |
+| `success-500`                 | Success states             |
+| `warning-500`                 | Warning states             |
+| `error-500`                   | Error states               |
 
 ### Spacing & Radius
 
